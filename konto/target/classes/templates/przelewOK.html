@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Konto Bankowe</title>
+<link rel="stylesheet" th:href="@{/style.css}"/>
+</head>
+  <body>
+  <h1>
+  Wypłata pieniędzy</h1>
+   </br>
+<h2>Podaj kwotę jaką chcesz wypłacić (PLN)</h2>
+<form action="#" th:action="@{/przelewOK}" th:object="${przelew}" method="post">
+<tr>
+
+<td><input type="number" min="0.0" step="0.01" th:field="*{kwota}"/></td>
+</form>
+<h2>Obecne saldo:</h2>
+<p th:text="${saldo}"/><br>
+ <br>
+ <br/>
+ <br/>
+ <h3>Inne opcje:</h3>
+<form method="get" action="/zasilenie">
+    <button type="submit">Zasilenie</button>
+</form>
+<br/>
+<form method="get" action="/saldo">
+    <button type="submit">Pobierz saldo</button>
+</form><br>
+<form method="get" action="/">
+    <button type="submit">Strona główna</button>
+</form>
+<br/>  
+            
+ 
+
+  </body>
+</html>
+<!-- end::allButValidation[] -->

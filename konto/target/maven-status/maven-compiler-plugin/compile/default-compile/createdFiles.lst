@@ -1,0 +1,6 @@
+bank\przelewController.class
+bank\Przelew.class
+bank\Konto.class
+bank\SaldoController.class
+bank\controller.class
+bank\KontoApplication.class
