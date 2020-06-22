@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: bank.KontoApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.404 s - in bank.KontoApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.013 s - in bank.KontoApplicationTests

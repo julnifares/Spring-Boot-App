@@ -5,7 +5,6 @@ public class Konto {
     static long rightLimit =9999999999999L;
     static long generatedLong = leftLimit + (long) (Math.random() * (rightLimit - leftLimit));
 private static String num=""+generatedLong+generatedLong;
-private static double sal=1000.00;
 private String accountNumber;
 private double saldo;
 private Konto(double saldo, String number) {
@@ -13,7 +12,7 @@ private Konto(double saldo, String number) {
 	this.accountNumber=number;
 }
 
-private static final Konto instance = new Konto(sal, num);
+private static final Konto instance = new Konto(0, num);
 
 
 
@@ -33,7 +32,8 @@ public void zasil(double kwota) {
 }
 
 public static Konto getInstance() {
-		return instance;
+	
+	return instance;
 }
 
 

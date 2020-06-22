@@ -11,7 +11,7 @@ public class przelewController {
 	Konto inst = Konto.getInstance();
 	@RequestMapping("/przelewOK")
 	    public String savePrzelew(@ModelAttribute Przelew przelew, BindingResult errors, Model model) {
-		    
+		
 			
 			if(przelew.getKwota()>inst.getSaldo())
 			return"tooMuch";
