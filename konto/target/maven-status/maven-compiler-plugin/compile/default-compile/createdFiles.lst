@@ -4,3 +4,4 @@ bank\Konto.class
 bank\SaldoController.class
 bank\controller.class
 bank\KontoApplication.class
+bank\ControllerRest.class

@@ -12,6 +12,8 @@ import org.springframework.validation.BindingResult;
 public class controller {
 	Konto inst = Konto.getInstance();
 	Przelew Pinst = new Przelew();
+	
+	
 	@RequestMapping(value = "/")
 	public String homePage(Model model) {
 		
@@ -20,13 +22,12 @@ public class controller {
 	}
 	
 	
-	@RequestMapping("/zasilenie")
+	@RequestMapping("/zasilenieOK")
 	public String saveZasilenie(@ModelAttribute Przelew przelew, BindingResult errors, Model model) {
 		  
 		
-	        Konto.getInstance().zasil(przelew.getKwota());
 	        model.addAttribute("saldo", ""+inst.getSaldo());
-	        return "zasilenie";
+	        return "zasilenieOK";
 			}
 	
 	

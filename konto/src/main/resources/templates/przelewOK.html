@@ -10,19 +10,15 @@
   Wypłata pieniędzy</h1>
    </br>
 <h2>Podaj kwotę jaką chcesz wypłacić (PLN)</h2>
-<form action="#" th:action="@{/przelewOK}" th:object="${przelew}" method="post">
+<form action="#"  th:object="${przelew}" method="post" th:action="@{/przelew}">
 <tr>
 
 <td><input type="number" min="0.0" step="0.01" th:field="*{kwota}"/>
 <button >Zatwierdź</button></td>
 </form>
-<h2>Obecne saldo:</h2>
-<p th:text="${saldo}"/><br>
- <br>
- <br/>
- <br/>
+<br/>
  <h3>Inne opcje:</h3>
-<form method="get" action="/zasilenie">
+<form method="get" action="/zasilenieOK">
     <button type="submit">Zasilenie</button>
 </form>
 <br/>
