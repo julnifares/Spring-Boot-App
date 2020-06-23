@@ -13,7 +13,7 @@ public class SaldoController {
 	
 
 	@GetMapping("/saldo")
-	public Konto konto(@RequestParam(value = "name", defaultValue = "brak") String name) {
+	public Konto konto() {
 		
 		return Konto.getInstance();
 	}
